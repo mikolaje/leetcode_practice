@@ -20,4 +20,4 @@ class Solution:
         return [int(x) for x in str(num)]
 
 if __name__=='__main__':
-    print Solution().plusOne([9,9,9,9])
+    print(Solution().plusOne([9,9,9,9]))

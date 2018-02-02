@@ -11,7 +11,7 @@ def quicksort(array):
         final_list = quicksort(lte_midpivot) + [midpivot] + quicksort(gt_midpivot)
         return final_list
 
-print quicksort([3,1,2,1,4,6,5])
+print(quicksort([3,1,2,1,4,6,5]))
 
 """
 1.先从数列中取出一个数作为基准数。
