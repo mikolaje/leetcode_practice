@@ -21,7 +21,7 @@ class Solution():
         :type target: int
         :rtype: List[int]
         """
-        lookup={}
+        lookup={}   # dict 的key为num的另一半； value 为num的index
         for i,element in enumerate(nums):
             if target-element in lookup:
                 return [lookup[target-element],i]
