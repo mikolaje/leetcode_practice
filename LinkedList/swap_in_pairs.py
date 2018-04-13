@@ -15,20 +15,32 @@ class Node:
         self.next = None
 
 
-def swapPairs(self, head):
+def swapPairs1(self, head):
     """
     :type head: Node
     :rtype: Node
     """
     if not head or not head.next:
         return head
-        dummpyhead = new_head = Node(0)
+
+    dummyhead = new_head = Node(0)
     while head and head.next:
         tmp = head.next
-        head.next = head.next.next
+        head.next = head.next.next  # 要把赋值 x.next看成给x 指引的意思。它指引到下一个node
         tmp.next = head
-        dummpyhead.next = tmp
-        dummpyhead = head
+        dummyhead.next = tmp
+        dummyhead = head
         head = head.next
     return new_head.next
+
+
+def swapPairs2(head):
+
+    if head and head.next:
+        # 和reverse差不多也是一个接着一个
+        tmp = head.next
+        head.next = swapPairs2(tmp.next)
+        tmp.next = head
+        return tmp
+    return head
 
