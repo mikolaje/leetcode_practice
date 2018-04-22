@@ -4,6 +4,7 @@
 """
 
 def selectSort(arr):
+    """可以参考下这个视频 https://www.youtube.com/watch?v=Ns4TPTC8whw"""
     len_ = len(arr)
     for i in range(len_):
         min_index = i
