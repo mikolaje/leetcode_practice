@@ -1,4 +1,8 @@
 # coding=u8
+"""
+插入排序适合数组中本来就很多是有顺序的
+
+"""
 
 def insertsort(array):
     _len = len(array)
@@ -15,11 +19,11 @@ def insertsort(array):
 
 def insertsort2(array):
     _len = len(array)
-    for i in range(1,_len):
+    for i in range(1, _len):
         for j in range(i):
-            print (i,j)
+            print (i, j)
             if array[i] < array[j]:
-                array[i],array[j]=array[j],array[i]  # 其实就是交换位置 可参考 https://www.youtube.com/watch?v=ROalU379l3U
+                array[i], array[j] = array[j], array[i]  # 其实就是交换位置 可参考 https://www.youtube.com/watch?v=ROalU379l3U
 
     return array
 

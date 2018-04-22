@@ -11,9 +11,7 @@ class Solution(object):
             if len(bits) - index == 0:
                 return False
             if bits[index] == 1:
-
                 index += 2
             else:
-
                 index += 1
 
